@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <style>
+        body {
+            margin: 0px;
+            flex-direction: column;
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .boneco {
+            position: absolute;
+            top: 550px;
+            left: 600px;
+        }
+
+        .texto_SC{
+            display: none;
+            width: 300px;
+            height: 500px;
+            font-size: 18px;
+            text-align: justify;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            background-color: rgb(166, 152, 255);
+            box-shadow: 1px 1px black;
+            padding: 10px;
+            
+        }
+        .texto_RS{
+            display: none;
+            width: 300px;
+            height: 500px;
+            font-size: 18px;
+            text-align: justify;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            background-color: rgb(255, 189, 142);
+            box-shadow: 1px 1px black;
+            padding: 10px;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <map name="meu_mapa">
+        <area onmouseleave="Esconder();" onmouseover="MostraTexto('RS');" shape="circle" coords="260,440,20" href="https://www.estado.rs.gov.br/inicial" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostraTexto('SC');" shape="circle" coords="297,413,20" href="https://www.sc.gov.br/" target="_blank">
+        <area onmouseleave="Esconder();" onmouseover="MostraTexto('PR');" shape="circle" coords="280,376,20" href="https://www.parana.pr.gov.br/" target="_blank">
+        <area shape="circle" coords="240,324,20" href="http://www.ms.gov.br/" target="_blank">
+        <area shape="circle" coords="226, 232,20" href="https://portal.mt.gov.br/app/catalog" target="_blank">
+        <area shape="circle" coords="139, 205,20" href="https://rondonia.ro.gov.br/portal/" target="_blank">
+        <area shape="circle" coords="43, 188,20" href="http://acre.gov.br/" target="_blank">
+        <area shape="circle" coords="123, 115,20" href="https://www.amazonas.am.gov.br/" target="_blank">
+        <area shape="circle" coords="162, 47,20" href="https://portal.rr.gov.br/" target="_blank">
+        <area shape="circle" coords="262, 134,20" href="https://www.pa.gov.br/" target="_blank">
+        <area shape="circle" coords="366, 135,20" href="https://www.ma.gov.br/" target="_blank">
+        <area shape="circle" coords="319, 196,20" href="https://www.to.gov.br/" target="_blank">
+        <area shape="circle" coords="389, 170,20" href="https://www.pi.gov.br/" target="_blank">
+        <area shape="circle" coords="435, 134,20" href="https://www.ceara.gov.br/" target="_blank">
+        <area shape="circle" coords="466, 150,20" href="http://www.rn.gov.br/" target="_blank">
+        <area shape="circle" coords="480, 167,20" href="https://paraiba.pb.gov.br/" target="_blank">
+        <area shape="circle" coords="451, 183,20" href="https://www.pe.gov.br/" target="_blank">
+        <area shape="circle" coords="313,349,20" href="https://www.saopaulo.sp.gov.br/" target="_blank">
+        <area shape="circle" coords="382,353,20" href="https://www.rj.gov.br/" target="_blank">
+        <area shape="circle" coords="364,311,20" href="https://www.mg.gov.br/" target="_blank">
+        <area shape="circle" coords="409,320,20" href="https://www.es.gov.br/" target="_blank">
+        <area shape="circle" coords="297, 276,20" href="https://www.goias.gov.br/" target="_blank">
+        <area shape="circle" coords="325,268,20" href="https://www.df.gov.br/" target="_blank">
+        <area shape="circle" coords="396,225,20" href="https://www.bahia.ba.gov.br/" target="_blank">
+        <area shape="circle" coords="455,209,20" href="https://www.se.gov.br" target="_blank">
+        <area shape="circle" coords="465, 198,20" href="https://alagoas.al.gov.br/" target="_blank">
+        <area shape="circle" coords="278, 50,20" href="https://www.portal.ap.gov.br/" target="_blank">
+
+    </map>
+
+    <img src="boneco.gif" id="boneco" class="boneco" width="90px">
+    <img src="brasil.jpg" class="brasil" usemap="#meu_mapa">
+        <div class="texto_SC" id="texto_SC">
+            Santa Catarina é uma das 27 unidades federativas do Brasil. Está situada no centro da região Sul do país. Possui como limites: ao norte, com o Paraná, ao sul, com o Rio Grande do Sul.
+            A leste, com o Oceano Atlântico e a oeste, com a província argentina de Misiones. Compreende uma superfície de 95 736,165 km². Com uma população de 6,2 milhões de habitantes, é o décimo estado mais populoso do Brasil.
+            Sua capital é Florianópolis, segunda cidade mais populosa do estado, após Joinville. Além do Espírito Santo, Santa Catarina constitui um dos dois estados cuja capital não é o município com maior número de habitantes.[7]
+            Conta com 295 municípios. Suas maiores cidades constituem Joinville, Florianópolis, Blumenau, Criciúma e Chapecó. Constitui um dos estados brasileiros com relevo mais montanhoso. 52% do território se encontram além de 600 metros.
+        </div>
+        <div class="texto_RS" id="texto_RS">
+            O Rio Grande do Sul, é uma das 27 unidades federativas do Brasil. Está situado na Região Sul e tem por limites o estado de Santa Catarina ao norte, Argentina ao oeste e Uruguai ao sul, além do Oceano Atlântico ao leste.
+            É dividido em 497 municípios e sua área total é de 281 730,223 km², o que equivale a 3,3% da superfície do Brasil, sendo pouco maior que o Equador.[8] Sua capital é o município de Porto Alegre e seu atual governador é Eduardo Leite.
+            As cidades mais populosas são: Porto Alegre, Caxias do Sul, Canoas, Pelotas e Santa Maria. O relevo é constituído por uma extensa baixada, dominada ao norte por um planalto. Antas, Uruguai, Taquari, Ijuí, Jacuí, Ibicuí, Pelotas e Camaquã
+            são os rios principais. O clima é subtropical e a economia baseia-se na agricultura (soja, trigo, arroz e milho), pecuária e indústria (de couro e calçados, alimentícia, têxtil, madeireira, metalúrgica e química).
+        </div>
+
+</body>
+<script>
+    
+    function Esconder()
+    {
+      texto_RS.style.display = "none";
+      texto_SC.style.display = "none";
+
+    }
+    function MostraTexto(estado)
+    {
+       if(estado=="RS")
+       {
+        texto_RS.style.display="block";
+       }
+       if(estado=="SC")
+       {
+        texto_SC.style.display="block";
+       }
+
+    }
+
+</script>
+
+</html>
